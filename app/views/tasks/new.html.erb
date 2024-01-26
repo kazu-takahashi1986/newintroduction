@@ -1,9 +1,12 @@
-<div class="row bg-dark-subtle rounded-3">
-  <div class="col fs-4 fw-bold my-3">アルバム登録</div>
+<div class="row">
+  <div class="mx-2 bg-warning-subtle rounded-3", style="width: 180px;">
+    <div class="col text-center fs-4 fw-bold my-1">アルバム登録</div>
+  </div>
+
+  <nav class="justify-content-end mt-2 mb-3">
+    <div class="col-1 btn btn-secondary btn-sm rounded-2", style="width: 60px;">
+      <%= link_to '一覧へ', tasks_path, class: 'nav-link' %>
+    </div>
+  </nav>
 </div>
-
-<nav class="justify-content-end">
-  <%= link_to '一覧へ', tasks_path, class: 'nav-link' %>
-</nav>
-
 <%= render partial: 'form', locals: { task: @task } %>
