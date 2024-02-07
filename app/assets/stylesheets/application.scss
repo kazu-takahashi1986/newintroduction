@@ -1,1 +1,27 @@
 @import "bootstrap";
+
+.link-decoration {
+    color: gray; 
+    text-decoration: none; /* リンクの下線 */
+    font-weight: 600; 
+  }
+
+  /* hover */
+  .link-decoration:hover {
+    color: silver; 
+  }
+
+  .task-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-title {
+    flex-grow: 1; /* 画像の右側にタイトルを寄せるために必要 */
+    margin-right: 10px; /* 画像とタイトルの間隔を調整 */
+  }
+  
+  .task-image {
+    width: 80px; /* 画像の幅を調整 */
+    height: 80px; /* 画像の高さを調整 */
+  }

@@ -8,20 +8,20 @@
 
 <%= form_with(model: task, local: true) do |f| %>
   <div class="form-group">
-    <%= f.label :artist, class: 'fw-bold', style: "font-size: 15px;" %>
+    <%= f.label :artist, class: 'fw-semi-bold text-white', style: "font-size: 15px;" %>
     <%= f.text_field :artist, class: 'form-control mb-2', style: "width: 300px;", id: 'task_artist' %>
   </div>
   <div class="form-group">
-    <%= f.label :name, class: 'fw-bold', style: "font-size: 15px;" %>
+    <%= f.label :name, class: 'fw-semi-bold text-white', style: "font-size: 15px;" %>
     <%= f.text_field :name, class: 'form-control mb-2',style: "width: 300px;",  id: 'task_name' %>
   </div>
   <div class="form-group">
-    <%= f.label :description, class: 'fw-bold', style: "font-size: 15px;" %>
+    <%= f.label :description, class: 'fw-semi-bold text-white', style: "font-size: 15px;" %>
     <%= f.text_area :description, rows: 8, class: 'form-control mb-2', id: 'task_description' %>
   </div>
   <div class="form-group">
-    <%= f.label :image, class: 'fw-bold', style: "font-size: 15px;" %>
+    <%= f.label :image, class: 'fw-semi-bold text-white', style: "font-size: 15px;" %>
     <%= f.file_field :image, class: 'form-control', style: "width: 310px;" %>
   </div>
-  <%= f.submit nil, class: 'mt-2 btn btn-outline-success btn-sm' %>
+  <%= f.submit nil, class: 'mt-2 btn btn-success btn-sm border border-dark' %>
 <% end %>
